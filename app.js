@@ -58,22 +58,21 @@ function pg1func(op){
 
     var implantes = document.getElementById("implantes");
     implantes.style = "position: absolute; top: 610px; left: 70px; height: 120px; background: transparent; width: 405px; border-radius: 2%; border:1px solid transparent;";
-    implantes.onclick = function(){APICall(1); inputsOff(); btnsOff(); op.src = imges[2];};
+    implantes.onclick = function(){APICall(1); inputsOff(); btnsOff(); op.src = imges[2]; pg3func(op);};
 
     var prótese = document.getElementById("prótese");
     prótese.style = "position: absolute; top: 610px; left: 500px; height: 120px; background: transparent; width: 405px; border-radius: 2%; border:1px solid transparent;";
-    prótese.onclick= function(){APICall(2); inputsOff(); btnsOff(); op.src = imges[1];};
+    prótese.onclick= function(){APICall(2); inputsOff(); btnsOff(); op.src = imges[1]; pg2func(op);};
 
     var name = document.getElementById("name");
-    name.style = "position: absolute; top: 1000px; left: 300px; height: 75px; background: transparent; width: 480px; border-radius: 2%; border:1px solid transparent;";
+    name.style = "position: absolute;  font-size: 40px; top: 1000px; left: 300px; height: 75px; background: transparent; width: 480px; border-radius: 2%; border:1px solid transparent;";
 
     var phone = document.getElementById("phone");
-    phone.style = "position: absolute; top: 1120px; left: 320px; height: 75px; background: transparent; width: 460px; border-radius: 2%; border:1px solid transparent;";
+    phone.style = "position: absolute; font-size: 40px; top: 1120px; left: 320px; height: 75px; background: transparent; width: 460px; border-radius: 2%; border:1px solid transparent;";
 
     var enviar = document.getElementById("enviar");
-    enviar.style = "position: absolute; top: 1300px; left: 585px; height: 100px; background: transparent; width: 320px; border-radius: 2%; border:1px solid transparent;";
-    enviar.onclick= function(){APICall(3); document.getElementById("contact_form").submit(); contact_info.name= name.value; contact_info.phone=phone.value; //console.log(contact_info);
-    };
+    enviar.style = "position: absolute; cursor:pointer; top: 1300px; left: 585px; height: 100px; background: transparent; width: 320px; border-radius: 2%; border:1px solid transparent;";
+    enviar.onclick= function(){APICall(3); document.getElementById("contact_form").submit(); contact_info.name= name.value; contact_info.phone=phone.value;};
 
     var privacy_policy = document.getElementById("privacy_policy");
     privacy_policy.style = "position: absolute; top: 1228px; left: 90px; height: 34px; background: transparent; width: 790px; border-radius: 2%; border:1px solid transparent;";
