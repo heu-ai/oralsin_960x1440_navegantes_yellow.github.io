@@ -33,24 +33,6 @@ function APICall(n){
 };
 
 
-function btnsOff(){
-var btns = document.getElementsByTagName("button");
-for (i=0; i<btns.length; i++){
-    btns[i].style= "display:none !important";
-    btns[i].style= "border:none";
-    //console.log(btns[i]);
-};
-};
-
-function inputsOff(){
-var inputs = document.getElementsByTagName("input");
-for (i=0; i<inputs.length; i++){
-    inputs[i].style= "display:none !important";
-    inputs[i].style= "border:none";
-    //console.log(btns[i]);
-};
-};
-
 function pg1func(op){
     var logo = document.getElementById("logo");
     logo.style = "position: absolute; top: 70px; left: 280px; height: 110px; background: transparent; width: 420px; border-radius: 2%; border:1px solid transparent;";
@@ -58,11 +40,11 @@ function pg1func(op){
 
     var implantes = document.getElementById("implantes");
     implantes.style = "position: absolute; top: 610px; left: 70px; height: 120px; background: transparent; width: 405px; border-radius: 2%; border:1px solid transparent;";
-    implantes.onclick = function(){APICall(1); inputsOff(); btnsOff(); op.src = imges[2]; pg3func(op);};
+    implantes.onclick = function(){APICall(1); op.src = imges[2]; pg3func(op);};
 
     var prótese = document.getElementById("prótese");
     prótese.style = "position: absolute; top: 610px; left: 500px; height: 120px; background: transparent; width: 405px; border-radius: 2%; border:1px solid transparent;";
-    prótese.onclick= function(){APICall(2); inputsOff(); btnsOff(); op.src = imges[1]; pg2func(op);};
+    prótese.onclick= function(){APICall(2);  op.src = imges[1]; pg2func(op);};
 
     var name = document.getElementById("name");
     name.style = "position: absolute;  font-size: 40px; top: 1000px; left: 300px; height: 75px; background: transparent; width: 480px; border-radius: 2%; border:1px solid transparent;";
@@ -88,6 +70,15 @@ function pg2func(op){
     logo.style = "position: absolute;top: 69px;left: 250px;height: 120px;background: transparent;width: 475px;border-radius: 2%;border: 1px solid transparent;";
     logo.onclick= function(){APICall(0);window.location.href="https://www.oralsin.com.br"};
 
+    document.getElementById("implantes").style = "display:none !important";
+    document.getElementById("prótese").style = "display:none !important";
+    document.getElementById("privacy_policy").style = "display:none !important";
+    document.getElementById("contact_form").style = "display:none !important";
+    document.getElementById("contact_form").disabled = true;
+    document.getElementById("name").disabled = true;
+    document.getElementById("phone").disabled = true;
+    document.getElementById("enviar").disabled = true;
+
     var whatsapp = document.getElementById("whatsapp");
     whatsapp.style = "position: absolute; top: 1157px; left: 215px; height: 170px; background: transparent; width: 545px; border-radius: 2%; border: 1px solid transparent;";
     whatsapp.onclick= function(){APICall(5); window.location.href = whatsapp_links[0]};
@@ -97,6 +88,15 @@ function pg3func(op){
     var logo = document.getElementById("logo");
     logo.style = "position: absolute;top: 1220px;left: 530px;height: 110px;background: transparent;width: 400px;border-radius: 2%;border: 1px solid transparent;";
     logo.onclick= function(){APICall(0);window.location.href="https://www.oralsin.com.br"};
+
+    document.getElementById("implantes").style = "display:none !important";
+    document.getElementById("prótese").style = "display:none !important";
+    document.getElementById("privacy_policy").style = "display:none !important";
+    document.getElementById("contact_form").style = "display:none !important";
+    document.getElementById("contact_form").disabled = true;
+    document.getElementById("name").disabled = true;
+    document.getElementById("phone").disabled = true;
+    document.getElementById("enviar").disabled = true;
 
     var whatsapp = document.getElementById("whatsapp");
     whatsapp.style = "position: absolute;top: 730px; left: 505px;height: 125px;background: transparent;width: 430px;border-radius: 2%;border: 1px solid transparent;";
