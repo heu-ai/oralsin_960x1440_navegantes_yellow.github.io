@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button:hover, button:active, button:focus {
+            border: 1px solid white !important;
+}
+        .active {
+          border-color: 1px solid white;
+        }
+        .selected{
+            border: 1px solid white !important;
+        }
+    </style>
+</head>
+<body>
+    <img id="output" usemap="#myMap" style="position: relative;">
+        <button id="logo" style="display:none !important; border:none;"> </button>
+        <button id="implantes" style="display:none !important; border:none;"> </button>
+        <button id="prótese" style="display:none !important; border:none;"> </button>
+        <form id="contact_form">
+            <input type="text" id="name" style="display:none !important; border:none;">
+            <input type="text" id="phone" style="display:none !important; border:none;">
+            <input type="button" id="enviar" style="display:none !important; border:none;">
+        </form>
+        <button id="privacy_policy" style="display:none !important; border:none;"> </button>
+        <button id="whatsapp" style="display:none !important; border:none;"> </button>
+    </img>
+    <map name="myMap" id = "myMap">
+    </map>
+    <script src="app.js"></script>
+</body>
+</html>
