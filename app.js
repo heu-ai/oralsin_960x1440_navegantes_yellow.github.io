@@ -62,7 +62,7 @@ function pg1func(op){
 
     var whatsapp = document.getElementById("whatsapp");
     whatsapp.style = "position: absolute; top: 1300px; left: 80px; height: 100px; background: transparent; width: 320px; border-radius: 2%; border: 1px solid transparent;";
-    whatsapp.onclick= function(){APICall(5); window.location.href = whatsapp_links[0]};
+    whatsapp.onclick= function(){APICall(5); window.open(whatsapp_links[0]);};
 };
 
 function pg2func(op){
@@ -81,7 +81,7 @@ function pg2func(op){
 
     var whatsapp = document.getElementById("whatsapp");
     whatsapp.style = "position: absolute; top: 1157px; left: 215px; height: 170px; background: transparent; width: 545px; border-radius: 2%; border: 1px solid transparent;";
-    whatsapp.onclick= function(){APICall(5); window.location.href = whatsapp_links[0]};
+    whatsapp.onclick= function(){APICall(5);  window.open(whatsapp_links[0]);};
 };
 
 function pg3func(op){
@@ -100,7 +100,7 @@ function pg3func(op){
 
     var whatsapp = document.getElementById("whatsapp");
     whatsapp.style = "position: absolute;top: 730px; left: 505px;height: 125px;background: transparent;width: 430px;border-radius: 2%;border: 1px solid transparent;";
-    whatsapp.onclick= function(){APICall(5); window.location.href = whatsapp_links[0]};
+    whatsapp.onclick= function(){APICall(5);  window.open(whatsapp_links[0]);};
 };
 
 // Clicking of Images
