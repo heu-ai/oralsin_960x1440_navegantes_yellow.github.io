@@ -1,13 +1,24 @@
 // Imported Images in a Array by giving complete url
 var imges = ['images/PG1.png', 'images/PG2.png', 'images/PG3.png'];
 
-var whatsapp_links = [
-    "https://api.whatsapp.com/send?phone=554884237975&text=Ol%C3%A1%2C%20visitei%20o%20site%20Oral%20Sin%20Grande%20Floripa%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
-    "https://api.whatsapp.com/send?phone=5547997420271&text=Ol%C3%A1%2C%20visitei%20o%20site%20Oral%20Sin%20Indaial%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
-    "https://api.whatsapp.com/send?phone=554791038700&text=Ol%C3%A1%2C%20visitei%20o%20site%20Oral%20Sin%20Itaja%C3%AD%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
-    "https://api.whatsapp.com/send?phone=5547992026440&text=Ol%C3%A1%2C%20visitei%20o%20site%20Oral%20Sin%20Timb%C3%B3%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+// homepage links
+var homepage_links = [
+    "https://oralsinitajai.com.br/",
+    "https://oralsinnavegantes.com.br/",
+    "https://oralsinflorianopolis.com.br/",
+    "https://oralsinindaial.com.br/"
 ]
 
+// whatsapp links
+var whatsapp_links = [
+    "https://api.whatsapp.com/send?phone=554791038700&text=Ol%C3%A1%2C%20visitei%20o%20site%20Oral%20Sin%20Itaja%C3%AD%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
+    "https://api.whatsapp.com/send?phone=554797419230&text=Ol%C3%A1%2C%20visitei%20o%20site%20Oral%20Sin%20Navegantes%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
+    "https://api.whatsapp.com/send?phone=554884237975&text=Ol%C3%A1%2C%20visitei%20o%20site%20Oral%20Sin%20Grande%20Floripa%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
+    "https://api.whatsapp.com/send?phone=5547997420271&text=Ol%C3%A1%2C%20visitei%20o%20site%20Oral%20Sin%20Indaial%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+]
+
+// Privacy Policy link
+var privacy_policy_link = "https://www.oralsin.com.br/politica_de_privacidade"
 
 var output = document.getElementById('output');
 let contact_info = {"name":"", "phone":""};
@@ -36,7 +47,7 @@ function APICall(n){
 function pg1func(op){
     var logo = document.getElementById("logo");
     logo.style = "position: absolute; top: 70px; left: 280px; height: 110px; background: transparent; width: 420px; border-radius: 2%; border:1px solid transparent;";
-    logo.onclick= function(){APICall(0);window.location.href="https://www.oralsin.com.br"};
+    logo.onclick= function(){APICall(0);window.location.href=homepage_links[0]};
 
     var implantes = document.getElementById("implantes");
     implantes.style = "position: absolute; top: 610px; left: 70px; height: 120px; background: transparent; width: 405px; border-radius: 2%; border:1px solid transparent;";
@@ -58,7 +69,7 @@ function pg1func(op){
 
     var privacy_policy = document.getElementById("privacy_policy");
     privacy_policy.style = "position: absolute; top: 1228px; left: 90px; height: 34px; background: transparent; width: 790px; border-radius: 2%; border:1px solid transparent;";
-    privacy_policy.onclick= function(){APICall(4); window.location.href = "https://www.oralsin.com.br/politica_de_privacidade"};
+    privacy_policy.onclick= function(){APICall(4); window.location.href = privacy_policy_link};
 
     var whatsapp = document.getElementById("whatsapp");
     whatsapp.style = "position: absolute; top: 1300px; left: 80px; height: 100px; background: transparent; width: 320px; border-radius: 2%; border: 1px solid transparent;";
@@ -68,7 +79,7 @@ function pg1func(op){
 function pg2func(op){
     var logo = document.getElementById("logo");
     logo.style = "position: absolute;top: 69px;left: 250px;height: 120px;background: transparent;width: 475px;border-radius: 2%;border: 1px solid transparent;";
-    logo.onclick= function(){APICall(0);window.location.href="https://www.oralsin.com.br"};
+    logo.onclick= function(){APICall(0);window.location.href=homepage_links[0]};
 
     document.getElementById("implantes").style = "display:none !important";
     document.getElementById("prótese").style = "display:none !important";
@@ -87,7 +98,7 @@ function pg2func(op){
 function pg3func(op){
     var logo = document.getElementById("logo");
     logo.style = "position: absolute;top: 1220px;left: 530px;height: 110px;background: transparent;width: 400px;border-radius: 2%;border: 1px solid transparent;";
-    logo.onclick= function(){APICall(0);window.location.href="https://www.oralsin.com.br"};
+    logo.onclick= function(){APICall(0);window.location.href=homepage_links[0]};
 
     document.getElementById("implantes").style = "display:none !important";
     document.getElementById("prótese").style = "display:none !important";
