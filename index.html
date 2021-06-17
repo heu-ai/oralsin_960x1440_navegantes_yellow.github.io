@@ -17,18 +17,21 @@
     </style>
 </head>
 <body>
-    <img id="output" usemap="#myMap" style="position: relative;">
-        <button id="logo" style="display:none !important; border:none;"> </button>
-        <button id="implantes" style="display:none !important; border:none;"> </button>
-        <button id="prótese" style="display:none !important; border:none;"> </button>
-        <form id="contact_form">
-            <input type="text" id="name" style="display:none !important; border:none;">
-            <input type="number" id="phone" style="display:none !important; border:none;">
-            <input type="button" id="enviar" style="display:none !important; border:none;">
-        </form>
-        <button id="privacy_policy" style="display:none !important; border:none;"> </button>
-        <button id="whatsapp" style="display:none !important; border:none;"> </button>
-    </img>
+    <div class="container">
+        <img id="output" usemap="#myMap" style="position: relative;">
+            <button id="logo" style="display:none !important; border:none;"> </button>
+            <button id="implantes" style="display:none !important; border:none;"> </button>
+            <button id="prótese" style="display:none !important; border:none;"> </button>
+            <form id="contact_form">
+                <input type="text" id="name" style="display:none !important; border:none;">
+                <input type="number" id="phone" style="display:none !important; border:none;">
+                <input type="button" id="enviar" style="display:none !important; border:none;">
+            </form>
+            <div id="message" style="position: absolute; top: 1400px; left: 510px; color:red; font-size:25px"></div>
+            <button id="privacy_policy" style="display:none !important; border:none;"> </button>
+            <button id="whatsapp" style="display:none !important; border:none;"></button>
+        </img>
+    </div>
     <map name="myMap" id = "myMap">
     </map>
     <script src="app.js"></script>
