@@ -56,7 +56,7 @@ fetch('https://demo.infuseads.com:8081/core/js-ads/creative-data/', {
 function APICall(n){
   // console.log(n,"no")
   var x =JSON.stringify({ key:n})
-  fetch('https://demo.infuseads.com:8081/core/key-count/?id=10', {
+  fetch('https://demo.infuseads.com:8081/core/key-count/?id=23', {
     method: 'POST',
     body: x,
     headers: {
@@ -78,7 +78,7 @@ function APICall(n){
 
 window.onload = function(){
   var x =JSON.stringify({ key:"impression"})
-  fetch('https://demo.infuseads.com:8081/core/key-count/?id=10', {
+  fetch('https://demo.infuseads.com:8081/core/key-count/?id=23', {
     method: 'POST',
     body: x,
     headers: {
