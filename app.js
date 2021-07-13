@@ -120,8 +120,8 @@ function pg1func(op){
 
     var enviar = document.getElementById("enviar");
     enviar.style = "position: absolute; cursor:pointer; top: 1300px; left: 585px; height: 100px; background: transparent; width: 320px; border-radius: 2%; border:1px solid transparent;";
-    enviar.onclick= function(){document.getElementById("contact_form").submit(); contact_info.name= name.value; contact_info.phone_no=phone.value; APIDataCall(contact_info);
-                                document.getElementById("message").innerHTML = "Obrigado! Entraremos em contato em breve"};
+    enviar.onclick= function(){if(name.value!="" && phone.value!=""){document.getElementById("contact_form").submit(); contact_info.name= name.value; contact_info.phone_no=phone.value; APIDataCall(contact_info);
+                                document.getElementById("message").innerHTML = "Obrigado! Entraremos em contato em breve"};};
 
     var privacy_policy = document.getElementById("privacy_policy");
     privacy_policy.style = "position: absolute; top: 1228px; left: 90px; height: 34px; background: transparent; width: 790px; border-radius: 2%; border:1px solid transparent;";
